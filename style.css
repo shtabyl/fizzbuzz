@@ -89,10 +89,10 @@
     }
 
     .results {
-        border: 2px dotted var(--main-color-light);
+        /* border: 2px dotted var(--main-color-light);
         --height: 70;
         height: calc(var(--height) * 1%);
-        border-radius: calc(var(--b-radius) * var(--height) / 100);
+        border-radius: calc(var(--b-radius) * var(--height) / 100); */
         padding: 1.5rem 1.5rem;
         font-size: 16px;
     }
