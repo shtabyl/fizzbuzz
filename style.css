@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+.gluten-normal {
+    font-family: "Gluten", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" -6;
+}
+
+@layer reset {
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+}
+
+
+@layer ui-kit {
+    :root {
+        --main-color: ;
+        --b-radius: ;
+        font-size: clamp(1rem, 2.5vw, 2rem);
+    }
+}
+
+
+@layer layout {
+    .container {
+        padding: 2rem 3rem;
+    }
+}
+
+
+@layer decoration {
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    .input {
+        margin-bottom: 2rem;
+    }
+
+}
+
