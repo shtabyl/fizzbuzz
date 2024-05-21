@@ -25,7 +25,7 @@
         --main-color-light: #e6e6d4;
         --bg-color: #005874;
         --b-radius: 50px;
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -62,7 +62,7 @@
     .form {
         margin-bottom: 2rem;
         & > input {
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 1.2rem;
             height: 40px;
             border-radius: var(--b-radius);
             font: inherit;
@@ -94,6 +94,7 @@
         height: calc(var(--height) * 1%);
         border-radius: calc(var(--b-radius) * var(--height) / 100);
         padding: 1.5rem 1.5rem;
+        font-size: 16px;
     }
 
 }
