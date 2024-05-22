@@ -23,6 +23,7 @@
     :root {
         --main-color: #FFBE00;
         --main-color-light: #e6e6d4;
+        --main-color-dark: #005874;
         --bg-color: #005874;
         --b-radius: 50px;
         font-size: 16px;
@@ -33,18 +34,18 @@
 @layer layout {
     .container {
         padding: 3rem 5%;
-        height: 100vh;
-        height: 100svh;
+        /* height: 100vh; */
+        /* height: 100svh; */
     }
 
     .section__results {
-        display: flex;
+        /* display: flex; */
     }
 }
 
 
 @layer decoration {
-    .section {
+    body {
         background: #1C819E;
         color: var(--main-color);
     }
@@ -95,6 +96,9 @@
         border-radius: calc(var(--b-radius) * var(--height) / 100); */
         padding: 1.5rem 1.5rem;
         font-size: 16px;
+        & > p {
+            margin-bottom: .5rem;
+        }
     }
 
 }

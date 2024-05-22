@@ -1,19 +1,32 @@
-let button = document.querySelector('.section__button');
+let form = document.querySelector('.section__form');
 let resultField = document.querySelector('.section__results');
+let resultArr = [];
+
+form.addEventListener('submit', function(event) {
+    let n = document.querySelector('.section__input').value;
+    fizzBuzz(n);
+    let length = resultArr.length;
+    for (let j = 0; j < length; j++) {    
+        let par = document.createElement('p');
+        par.textContent = resultArr[j];
+        resultField.appendChild(par);
+    }
+    event.preventDefault();
+})
 
 function fizzBuzz(n) {
-    for (let i = 1; i < n + 1; i++) {
+    for (let i = 1; i <= n; i++) {
         let dividedByThree = i % 3;
         let dividedByFive = i % 5;
         if (dividedByThree && dividedByFive == 0) {
-            console.log('FizzBuzz');
+            resultArr.push('FizzBuzz');
         } else {
             if (dividedByThree == 0) {
-                console.log('Fizz');
+                resultArr.push('Fizz');
             } else if (dividedByFive == 0) {
-                console.log('Buzz');
+                resultArr.push('Buzz');
             } else {
-                console.log(i);
+                resultArr.push(i);
             }
         }
     }
